@@ -101,8 +101,99 @@
 
 // Предполагается, что посетитель вводит только числа. Предусматривать обработку нечисловых строк в этой задаче необязательно.
 
-let number;
+// let number;
 
-do {
-    number = +prompt('Введите число больше 100', '');
-} while (number <= 100 && number);
+// do {
+//     number = +prompt('Введите число больше 100', '');
+// } while (number <= 100 && number);
+
+
+// Конструкция "switch"
+
+// 1) Напишите if..else, соответствующий следующему switch:
+// switch (browser) {
+//     case 'Edge':
+//       alert( "You've got the Edge!" );
+//       break;
+  
+//     case 'Chrome':
+//     case 'Firefox':
+//     case 'Safari':
+//     case 'Opera':
+//       alert( 'Okay we support these browsers too' );
+//       break;
+  
+//     default:
+//       alert( 'We hope that this page looks ok!' );
+//   }
+
+// let browser;
+// if (browser === 'Edge') {
+//     alert ('Youve got the Edge!');
+// } else if (browser == 'Chrome'|| browser == 'Firefox' || browser == 'Safari' || browser == 'Opera') {
+//     alert ('Okay we support these browsers too');
+// } else {
+//     alert ('We hope that this page looks ok!');
+// }
+
+// 2) Переписать условия "if" на "switch"
+
+// const number = +prompt('Введите число между 0 и 3', '');
+
+// if (number === 0) {
+//   alert('Вы ввели число 0');
+// }
+
+// if (number === 1) {
+//   alert('Вы ввели число 1');
+// }
+
+// if (number === 2 || number === 3) {
+//   alert('Вы ввели число 2, а может и 3');
+// }
+
+// switch (number) {
+//     case 0:
+//         alert('Вы ввели число 0');
+//         break;
+//     case 1:
+//         alert('Вы ввели число 1');
+//         break;
+//     case 2:
+//     case 3:
+//         alert('Вы ввели число 2, а может и 3');
+//         break;
+// }
+
+// Функции
+
+// 1) Перепишите функцию, используя оператор '?' или '||'
+// Следующая функция возвращает true, если параметр age больше 18.
+
+// В ином случае она задаёт вопрос confirm и возвращает его результат.
+
+// function checkAge(age) {
+//     if (age > 18) {
+//       return true;
+//     } else {
+//       return confirm('Родители разрешили?');
+//     }
+//   }
+
+// function chekAge(age) {
+//    return (age > 18) ? true : confirm('Родители разрешили?');
+// }
+
+// 2) Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b.
+
+// function min(a, b) {
+//     if (a < b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+
+// 3) Напишите функцию pow(x,n), которая возвращает x в степени n. 
+// Иначе говоря, умножает x на себя n раз и возвращает результат.
+
